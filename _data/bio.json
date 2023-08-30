@@ -29,7 +29,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Linux", "Git/GitHub", "Maya", "Unity" ]
+      "keywords": [ "Windows", "Linux", "Git/GitHub", "Maya", "Unity" ]
     }
   ],
   "education": [
