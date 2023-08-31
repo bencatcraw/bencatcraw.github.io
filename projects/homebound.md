@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/homebound.jpg
+image: img/homebound-square.jpg
 title: "homebound"
 date: 2023
 published: true
