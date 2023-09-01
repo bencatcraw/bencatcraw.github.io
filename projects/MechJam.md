@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/mechjam-square.png
+image: img/mechjam-box.png
 title: "Untitled Mech Game"
 date: 2022
 published: true
