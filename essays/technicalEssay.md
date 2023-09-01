@@ -21,6 +21,8 @@ Going into this class, I have very little software engineering experience. Other
 
 Im excited to learn more from this class and I already have practical ideas of software I could make. For example, I spend a lot of my time helping out with the technical side in the gaming lab on campus. Currently, for students wanting to play games between classes, they can show up to the lab, sign in through a google form, and then ask to play at a PC. Right now this process is all manual, the google form just goes into a spreadsheet, and in a seperate spreadsheet they keep track of who is playing on what computer and for how long. After taking this class, I would like to be able to create a program that could automate this process for them which would improve the wait times for people hoping to play games before their next class.
 
+I am also currently in the VRAR class with Jason Leigh, and a few of our projects in that class include creating augmented reality applications for mobile devices, so hopefully I will be able to combine my skills from both classes and create an interesting and practical phone app that people could actually use.
+
 ## The Future
 
 In the future, after I get my degree, I plan to apply for a role in either game development or software engineering as they both interest me and often share some similar design principles.
