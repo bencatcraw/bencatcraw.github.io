@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/homebound-square.jpg
+image: img/homebound-square.png
 title: "homebound"
 date: 2023
 published: true
@@ -12,7 +12,7 @@ labels:
 summary: "homebound is a short 2D puzzle platformer that explores the feeling of home."
 ---
 
-<img class="img-fluid" src="../img/homebound.jpg">
+<img class="img-fluid" src="../img/homebound-banner.png">
 
 *"Tasked on a mission to discover a new home planet, a lonely astronaut braves an desolate world while making a fluffy new friend."*
 
