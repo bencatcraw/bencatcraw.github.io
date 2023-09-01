@@ -8,6 +8,7 @@ published: true
 labels:
   - Unity
   - GitHub
+  - C#
 summary: "homebound is a short 2D puzzle platformer that explores the feeling of home."
 ---
 
@@ -36,6 +37,6 @@ summary: "homebound is a short 2D puzzle platformer that explores the feeling of
 ## My Impact
 My coworker originally reached out to me for help on a small project he was working on because he knew I had past unity experience. I started off small by reading through his scripts and looking through his screens while fixing small bugs & issues along the way. During the summer of 2023, my coworker decided to bring more people in. As the game grew, I started working on more gameplay mechanics and bug fixes, and now we are officially releasing to steam on Sep 22nd!
 ## Future Plans
-For now, the demo of the game will be free on steam. The demo includes 5 levels and introduces you to most of the major mechanics and movement. If the game is well received we want to release a full, paid version with more levels and story.
+For now, the demo of the game will be free on steam. The demo includes 5 levels and introduces you to most of the major mechanics and movement. If the game is well received we want to release a full paid version with more levels and story.
 ### Links
 Steam Page: <a href="https://store.steampowered.com/app/2568870/homebound/"><i class="large github icon "></i>store.steampowered.com/app/2568870/homebound/</a>
