@@ -12,6 +12,8 @@ labels:
 summary: "A game I helped make for the UH Game Dev's Club MechJam 3"
 ---
 
+<img class="img-fluid" src="../img/mechjam.png">
+
 ## The Game
 This game was created for the MechJam III game jam by the UH Manoa Game Dev Club. It was a two week jam and the theme was anything related to mechs. One fun thing about these jams is they often have secondary themes so we decided to also choose the shapeshifting theme. The game is about a mech that can switch between earth, water, and fire abilities that let it solve puzzles to progress through the levels.
 
