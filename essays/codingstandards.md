@@ -18,6 +18,7 @@ Coding standards are a set of practices for programmers and software engineers t
 - Group related code into segments
 - Avoid repeating code
 - Add comments to make code easier to understand
+
 These can change depending on what industry you are working in, but are all focused on performance and helping others understand when reading your code. 
 
 ## My take
