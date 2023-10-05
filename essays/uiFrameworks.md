@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: 
+title: UI Frameworks are cool!
 # All dates must be YYYY-MM-DD format!
 date: 2023-10-04
 published: true
