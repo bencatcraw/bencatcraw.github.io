@@ -9,7 +9,7 @@ labels:
   - Unity
   - GitHub
   - C#
-summary: "A game I helped make for the UH Game Dev's Club MechJam 3"
+summary: "A game I helped make for the UH Game Dev's Club MechJam 3."
 ---
 
 <img class="img-fluid" src="../img/mechjam.png">
