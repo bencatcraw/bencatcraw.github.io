@@ -20,4 +20,6 @@ This Project was created for my AR/VR Development class. The task was to create 
 ### Links
 Github Repo: <a href="https://github.com/bencatcraw/ARCube"><i>https://github.com/bencatcraw/ARCube </i></a>
 
+Link to Video(if embed isnt working): <a href="https://drive.google.com/file/d/1fqUwz0IlJJDpctqnZcUi0ydNmsvN8gkQ/view?usp=sharing"><i>https://drive.google.com/file/d/1fqUwz0IlJJDpctqnZcUi0ydNmsvN8gkQ/view?usp=sharing</i></a>
+
 
