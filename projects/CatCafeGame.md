@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/CatCafe.png
 title: "VR Cat Cafe Game"
-date: 2023
+date: Nov-Dec 2023
 published: true
 labels:
     - Unity
