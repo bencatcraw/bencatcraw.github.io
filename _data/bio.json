@@ -1,0 +1,90 @@
+{
+  "basics": {
+    "name": "Benjamin Crawford",
+    "label": "Student",
+    "picture": "https://github.com/bencatcraw.png",
+    "email": "bcc@hawaii.edu",
+    "phone": "858-860-6089",
+    "website": "https://bencatcraw.github.io",
+    "summary": "I am studying for a B.A. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2025.",
+    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "bencatcraw", "url": "http://github.com/bencatcraw" },
+      { "network": "linkedin", "username": "bencatcraw", "url": "http://linkedin.com/in/bencatcraw" },
+    ]
+  },
+  "interests": [
+    { "name": "Game Development" },
+    { "name": "Software Engineering" },
+    { "name": "ESports" },
+    { "name": "3D Modeling" },
+    { "name": "Animation" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C", "C++", "Java", "Javascript", "C#", "Python" ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "Windows", "Linux", "Git/GitHub", "Maya", "Unity" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science",
+      "studyType": "B.A.",
+      "startDate": "2021-09-01",
+      "endDate": "Present",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "UH Hamilton Library",
+      "position": "Desktop Network Support",
+      "website": "micro@hawaii.edu",
+      "startDate": "2022-08-01",
+      "endDate": "Present",
+      "summary": "Network support and troubleshooting for 200+ staff computers",
+      "highlights": [
+        "Work with Windows, MacOS, Linux, and Pi devices",
+        "Manage thousands of devices and licenses in a building wide database"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Vanta",
+      "website": "https://www.vanta.gg/",
+      "position": "Event Operations & Marketing Intern",
+      "startDate": "2023-5-31",
+      "endDate": "2023-8-10",
+      "summary": "Created a playbook for small size Esports events and activations",
+      "highlights": [
+        "Researched other companies and competitors",
+        "Adapted bigger picture ideas for scholastic approach"
+      ]
+    },
+    {
+      "organization": "Overwatch League",
+      "website": "https://www.overwatchleague.com/en-us/",
+      "position": "Event Operations Intern",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Professional Esports competition",
+      "highlights": [
+        "Setup and breakdown of stage and practice areas",
+        "Content creation and live broadcast",
+        "Worked directly with the players and their needs"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}
