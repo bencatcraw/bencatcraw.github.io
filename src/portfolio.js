@@ -41,7 +41,8 @@ const projects = [
         description:
             'Life Before Death is a walking simulator/escape room game focused on interactive storytelling, diverse puzzles, and high quality graphics.',
         stack: ['Unreal Engine 5', 'Blueprints', 'Quixel'],
-        livePreview: 'https://bcc394.wixsite.com/lifebeforedeath',
+        sourceCode: 'https://bcc394.wixsite.com/lifebeforedeath',
+        livePreview: 'https://store.steampowered.com/app/3282650/Life_Before_Death/?beta=1',
     },
     {
         name: 'homebound',
