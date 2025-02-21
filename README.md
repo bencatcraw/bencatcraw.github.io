@@ -1,68 +1,46 @@
-# Cleanfolio
+# What is this ?
+This is a portfolio template that you can use to showcase your work, especially if it's comprised of projects that should be shown in a very visual way.
 
-Cleanfolio is a portfolio template built with React. However, if you prefer a template built with HTML, CSS, and JavaScript, you can check out [Cleanfolio Minimal](https://github.com/rjshkhr/cleanfolio-minimal).
+Looking for a game developer job, I needed a portfolio to present my work to recruiters. I found a lot of custom made portfolios, but no easy to use template unless I used Wordpress. Which was overkill to me because a static HTML/JS website would do fine.
 
-## Preview
+So i created my own using VueJS, keeping in mind that I wanted it to be easily customisable so other people can use this as a base to make their own. It's very simple, static, fast and responsive.
 
-[![Imgur](https://imgur.com/FwDMNEM.gif)](https://rjshkhr.github.io/cleanfolio)
+For a real world use case, check my portfolio: https://scheefer.me
 
-[Live Demo](https://rjshkhr.github.io/cleanfolio)
 
-## Instructions
+# How to use
 
-### Setup
+1. Install
 
-```shell
-git clone https://github.com/rjshkhr/cleanfolio
-cd cleanfolio
-```
+    - Fork or duplicate the repository
+    - npm install
+    - npm run serve
+    - If any issue with serve, please read this: https://stackoverflow.com/questions/70582072/npm-run-fails-with-err-ossl-evp-unsupported For Windows Powershell, you can fix with `$env:NODE_OPTIONS = '--openssl-legacy-provider'` then `npm run serve`
 
-If you use [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm), execute:
+2. Customize
+* For the content
+    - Except for the projects pages, everything is static HTML that you can edit directly in the views and components files
+    - For the projects pages, the page is dynamically populated at runtime using data stored in Typescript files (data/GameProjectsData.ts and data/OtherProjectsData.ts). Make the changes directly in these .ts files
+    - Static files (images, icons, downloadables,..) should be placed in /public folder.
+    - Make the necessary changes in the .env file (this is mostly the site metadata). You need to "npm run serve" again when updating this file.
 
-```shell
-nvm install
-nvm use
-```
+* For the style
+    - The basic colors can be edited in the css/variables.less file.
+    - The rest of the CSS can be edited, if need be, directly inside each view and component.
+    - If you place custom CSS in your projects HTML data (that will be displayed in an overlay dialog), you must add the definition for this CSS in the css/projects.less file
 
-Or:
+* Additional info & optimizations
+    - Images will be loaded on-demand when you switch tabs. It means if you have big images or animated gifs, you may want to preload them so the user sees them faster when they change tabs. To do this, you can call Helpers.preloadImages in app.vue to preload heavy images.
 
-```shell
-fnm install
-fnm use
-```
+3. Deploy
 
-To install and launch the project, run these commands:
+    - npm run build
+    - copy the content of the "dist" folder (created by "npm run build") to the publish location.
+    - Check this example if you want to deploy to GitHub pages or some other major static content host: https://cli.vuejs.org/guide/deployment.html#github-pages
 
-```shell
-yarn
-yarn start
-```
 
-### How to Use
+# License
 
-- Open the `public/index.html` file and replace:
+This is GNU LGPL, check the LICENSE file.
 
-`<title>John Smith</title>` with `<title>Your Name</title>`.
-
-- Open the `src/portfolio.js` file and make the necessary changes.
-
-### Deployment
-
-- In the `package.json` file, update:
-
-`"homepage": "https://rjshkhr.github.io/cleanfolio"`
-
-to `"homepage": "https://yourusername.github.io"`.
-
-- Push the changes to your repository.
-
-- To build and deploy, run the following commands:
-
-```shell
-yarn build
-yarn deploy
-```
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+Please consider keeping the link to this repository at the bottom of your portfolio, so other people can find and use this template too. Of course it's not mandatory though.
