@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: fix legacy
+        run: $env:NODE_OPTIONS = '--openssl-legacy-provider'
+      
       - name: Build project
         run: npm run build  # Ensure this script is correctly set in package.json
 
