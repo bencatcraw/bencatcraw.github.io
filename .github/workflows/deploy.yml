@@ -23,5 +23,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Adjust this if your build output is in a different folder
+          publish_dir: ./dist  # Adjust this if your build output is in a different folder
           branch: gh-pages
