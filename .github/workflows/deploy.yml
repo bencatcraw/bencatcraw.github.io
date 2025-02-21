@@ -17,7 +17,7 @@ jobs:
         run: npm install
 
       - name: fix legacy
-        run: export NODE_OPTIONS=--openssl-legacy-provider
+        run: npm audit fix --include=dev
       
       - name: Build project
         run: npm run build  # Ensure this script is correctly set in package.json
