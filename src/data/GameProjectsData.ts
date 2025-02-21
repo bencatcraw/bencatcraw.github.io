@@ -17,7 +17,7 @@ export default [
     <div class="paragraph">
         Main features :
         <ul>
-        <li>Some stuff</li>
+        <li>Some stuf</li>
         <li>Some great stuff</li>
         <li>More awesome stuff</li>
         <li>And then some</li>
