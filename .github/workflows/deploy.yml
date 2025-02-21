@@ -24,4 +24,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist  # Adjust this if your build output is in a different folder
-          branch: gh-pages
+          publish_branch: gh-pages
