@@ -64,7 +64,7 @@
         <h3>Programs</h3>
         <SkillRate name="Unity" :rate="5" />
         <SkillRate name="Unreal" :rate="3" />
-        <SkillRate name="Godot" :rate="2" />
+        <SkillRate name="Godot" :rate="3" />
         <SkillRate name="GameMaker" :rate="2" />
         <SkillRate name="Blender" :rate="3" />
         <SkillRate name="Maya" :rate="3" />
@@ -74,7 +74,7 @@
         <h3>Languages</h3>
         <SkillRate name="C#" :rate="5" />
         <SkillRate name="C++" :rate="3" />
-        <SkillRate name="C" :rate="3" />
+        <SkillRate name="GDScript" :rate="3" />
         <SkillRate name="Java" :rate="3" />
         <SkillRate name="Javascript" :rate="3" />
         <SkillRate name="Python" :rate="3" />
