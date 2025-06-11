@@ -3,13 +3,13 @@
     <h1>Resume</h1>
 
     <div class="paragraph">
-      I'm <strong>Benjamin Crawford</strong>, a senior Computer Science major at University of Hawaiʻi at Mānoa. I am pursuing a career in game development and design.
+      I'm <strong>Benjamin Crawford</strong>, a recent Computer Science graduate from University of Hawaiʻi at Mānoa. I am pursuing a career in game development and design, and plan to continue my education when I start my masters in Fall 2025. <br>
       <br />I am extremely passionate about games and have been playing them my whole life. I have played every genre there is and have even competed professionally.
       <br />I strive in team centered environments and have lead many projects.
       <br />
-      <br />Currently, I work at LAVA, a research lab on campus. There, I develop visualization applications to make complex data easier to understand.
+      <br />Currently, I work at LAVA (Lab for Advanced Visualization Applications). At LAVA, I develop visualization applications to make complex data easier to understand.
       <br />
-      <br />Besides video games, I love rock climbing, photography, and my two cats.
+      <br />Besides video games, I love rock climbing, photography, fpv drones, and my two cats.
 
       <div style="margin-top:20px; margin-bottom:20px;">
         <a class="download-link" href="d/BCCRESUME2025.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Download as PDF </a>

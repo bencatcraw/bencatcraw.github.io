@@ -1,6 +1,41 @@
 import ProjectData from '@/data/ProjectData.ts'
 
 export default [
+    new ProjectData("project-0", "Cloud Runner", "img/projects/cr1.png", 
+    `   
+    <div class="paragraph">
+     <strong>Cloud Runner</strong> is a fast paced interactive parkour game that has the player running on clouds while slicing buildings and parrying meteors to fight back against an evil megacorporation.
+    </div>
+    <div class="paragraph center">
+    <strong> Gameplay </strong>
+    </div>
+    <div class="paragraph center">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/b-193vYd_E0?si=M_vXHWG1oZBI_FFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="paragraph">
+        My Contribution :
+        <ul>
+        <li>Programming</li>
+        <li>Level Design</li>
+        <li>Animation/Cutscenes</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        Utilizes :
+        <ul>
+        <li>Unity 6</li>
+        <li>C#</li>
+        <li>Blender</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        Development Time :
+        <ul>
+        <li>2 Months</li>
+        </ul>
+    </div>
+    `, "#999999", true),
     new ProjectData("project-1", "Life Before Death", "img/projects/lbd.png", 
     `   
     <div class="paragraph">
@@ -15,7 +50,18 @@ export default [
     <div class="paragraph center">
         <iframe src="https://store.steampowered.com/widget/3282650/" frameborder="0" width="646" height="190"></iframe>
     </div>
-
+    <div class="paragraph center">
+        <img class="pc-screenshot" src="img/projects/lbd2.png" alt="LBD Screenshot" />
+        <img class="pc-screenshot" src="img/projects/lbd1.png" alt="LBD Screenshot" />
+    </div>
+    <div class="paragraph">
+        My Contribution :
+        <ul>
+        <li>Programming</li>
+        <li>Level Design</li>
+        <li>Animation</li>
+        </ul>
+    </div>
     <div class="paragraph">
         Utilizes :
         <ul>
@@ -25,20 +71,32 @@ export default [
         <li>Quixel</li>
         </ul>
     </div>
-
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="img/projects/lbd2.png" alt="LBD Screenshot" />
-        <img class="pc-screenshot" src="img/projects/lbd1.png" alt="LBD Screenshot" />
+    
+    <div class="paragraph">
+        Development Time :
+        <ul>
+        <li>1 Month</li>
+        </ul>
     </div>
     `, "#383838", true),
     new ProjectData("project-2", "Cookie & Cream VR Cafe", "img/projects/ccc.png", `
     <div class="paragraph">
-        <strong>Cookie & Cream</strong> is a coop VR cooking game where the players play as cats.
+        <strong>Cookie & Cream</strong> is a coop VR cooking game where the players play as cats. While one player takes orders and fills drinks, the other frantically makes food while the timer counts down.
+    </div>
+    <div class="paragraph center">
+    <strong> Gameplay </strong>
     </div>
     <div class="paragraph center">
         <iframe width="800" height="450" src="https://www.youtube.com/embed/KfA0ykglSQY?si=XDOaRGSG-5YqXubV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
+    <div class="paragraph">
+        My Contribution :
+        <ul>
+        <li>Programming</li>
+        <li>Animation</li>
+        </ul>
+    </div>
     <div class="paragraph">
         Utilizes :
         <ul>
@@ -46,6 +104,12 @@ export default [
         <li>C#</li>
         <li>VR</li>
         <li>Online Multiplayer</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        Development Time :
+        <ul>
+        <li>1 Month</li>
         </ul>
     </div>
 
@@ -69,11 +133,24 @@ export default [
     <div class="paragraph center">
         <iframe src="https://store.steampowered.com/widget/2568870/" frameborder="0" width="646" height="190"></iframe>
     </div>
+
+    <div class="paragraph">
+        My Contribution :
+        <ul>
+        <li>Programming</li>
+        </ul>
+    </div>
     <div class="paragraph">
         Utilizes :
         <ul>
         <li>Unity</li>
         <li>C#</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        Development Time :
+        <ul>
+        <li>1 Year</li>
         </ul>
     </div>
 
@@ -91,6 +168,15 @@ export default [
     <div class="paragraph center">
         <img width="800" src="img/projects/mmm.png" alt="Eugeneable Screenshot" />
     </div>
+
+    <div class="paragraph">
+        My Contribution :
+        <ul>
+        <li>Programming</li>
+        <li>3D Modeling</li>
+        <li>Level Design</li>
+        </ul>
+    </div>
     <div class="paragraph">
         Main features :
         <ul>
@@ -98,6 +184,12 @@ export default [
         <li>C#</li>
         <li>Blender</li>
         <li>FLStudio</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        Development Time :
+        <ul>
+        <li>1 Month</li>
         </ul>
     </div>
 
@@ -115,11 +207,24 @@ export default [
     <div class="paragraph center">
         <img width="800" src="img/projects/art363.png" alt="Eugeneable Screenshot" />
     </div>
+
+    <div class="paragraph">
+        My Contribution :
+        <ul>
+        <li>Programming</li>
+        </ul>
+    </div>
     <div class="paragraph">
         Utilizes :
         <ul>
         <li>Unity</li>
         <li>C#</li>
+        </ul>
+    </div>
+    <div class="paragraph">
+        Development Time :
+        <ul>
+        <li>2 Weeks</li>
         </ul>
     </div>
 

@@ -1,8 +1,6 @@
 <template>
   <div class="footer">
-    
-    <div class="left"><a href="https://github.com/schouffy/gamedev-portfolio" target="blank">Portfolio</a> by schouffy</div>
-    <div class="right">Reach me at <a href="mailto:bcc@hawaii.edu">bcc@hawaii.edu</a> or <router-link to="/contact">through here</router-link></div>
+    <div class="left">Reach me at <a href="mailto:bcc@hawaii.edu">bcc@hawaii.edu</a> or <router-link to="/contact">through here</router-link></div>
   </div>
 </template>
 
