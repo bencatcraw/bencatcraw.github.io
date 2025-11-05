@@ -3,7 +3,7 @@
     
     <h1>Let's get in touch</h1>
 
-    <div style="margin-bottom:40px;">I'm looking for a job !<br/>Feel free to contact me about any opportunity, or just to chat.</div>
+    <div style="margin-bottom:40px;">I'm looking for an internship !<br/>Feel free to contact me about any opportunity, or just to chat.</div>
 
     <ul>
       <li>

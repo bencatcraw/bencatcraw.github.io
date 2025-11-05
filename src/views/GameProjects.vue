@@ -9,7 +9,7 @@
     <ProjectsList v-bind:projects="projects" />
 
     <div style="margin-top: 20px;">
-      You can find smaller projects on <a target="_blank" href="https://github.com/bencatcraw">my github</a>
+      You can find additional projects on <a target="_blank" href="https://github.com/bencatcraw">my github</a>
     </div>
   </div>
 </template>

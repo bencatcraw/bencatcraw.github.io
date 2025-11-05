@@ -4,13 +4,13 @@
 
     <div class="paragraph">
       <div>
-        I'm <strong>Benjamin Crawford</strong>, a game developer with 10 years of experience, primarily in the Unity Engine.
+        I'm <strong>Benjamin Crawford</strong>, a game developer with 10 years of experience, across multiple engines.
         I've also been playing games, casually and competitively, for most of my life and know the ins and outs of every genre.
       </div>
 
-      <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">games</router-link> (ranging from personal projects to group game jams), on other <router-link to="/other-projects">non-game projects</router-link>, and took part in <router-link to="/resume">a few internships</router-link> as well. I'm always working on something, so feel free to ask me about my latest project!</div>
+      <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">games</router-link>, on other <router-link to="/other-projects">non-game projects</router-link>, and took part in <router-link to="/resume">a few internships</router-link> as well. I'm always working on something, so feel free to ask me about my latest project!</div>
 
-      <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a game designer/gameplay programmer, and excited for new opportunities. You can reach me at <a href="mailto:bcc@hawaii.edu">bcc@hawaii.edu</a> or <router-link to="/contact">through here</router-link>.</div>
+      <div style="margin-top: 40px;">I'm <strong>currently looking for an internship</strong> as a game designer/gameplay programmer, and excited for new opportunities. You can reach me at <a href="mailto:bcc@hawaii.edu">bcc@hawaii.edu</a> or <router-link to="/contact">through here</router-link>.</div>
     </div>
 
     <div class="photo">

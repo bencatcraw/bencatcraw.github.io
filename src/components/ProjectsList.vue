@@ -83,9 +83,9 @@ export default Vue.extend({
   transition: all 0.2s;
 }
 .project-item-image:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .project-item:hover {
@@ -105,11 +105,11 @@ filter: brightness(120%);
 
 @media only screen and (min-width: 620px){
   .projects-list {
-    max-width: 900px;
+    max-width: 960px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: minmax(540px, auto);
   }
 
   .project-item {

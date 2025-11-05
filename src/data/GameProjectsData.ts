@@ -1,7 +1,25 @@
 import ProjectData from '@/data/ProjectData.ts'
 
 export default [
-    new ProjectData("project-0", "Cloud Runner", "img/projects/cr1.png", 
+    new ProjectData("project-0", "Wheelchair Wizards", "img/projects/WWMAIN.png", 
+    `   
+    <div class="paragraph">
+    <strong>Wheelchair Wizards</strong> is is a 4 player party game where you battle your friends while upgrading your wizard. Wheelchair Wizards is available on Steam for free, and has seen over 25,000 unique players in 3 months and has 300+ daily active users. 
+    </div>
+    <div class="paragraph center">
+    <strong> Trailer </strong>
+    </div>
+    <div class="paragraph center">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/S6ToBf0wrA4?si=QfW74Fx6Hw6fpOse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="paragraph center">
+        <iframe src="https://store.steampowered.com/widget/3832630/" frameborder="0" width="646" height="190"></iframe>
+    </div>
+    <div class="paragraph">
+    Wheelchair Wizards was created in Godot, to challenge my cross-engine knowledge. It uses a recompiled version of the engine to incoporate GodotSteam, a networking library for leveraging Steam's built-in P2P. 
+    </div>
+    `, "#119999", false, true),
+    new ProjectData("project-1", "Cloud Runner", "img/projects/cr1.png", 
     `   
     <div class="paragraph">
      <strong>Cloud Runner</strong> is a fast paced interactive parkour game that has the player running on clouds while slicing buildings and parrying meteors to fight back against an evil megacorporation.
@@ -14,29 +32,11 @@ export default [
     </div>
 
     <div class="paragraph">
-        My Contribution :
-        <ul>
-        <li>Programming</li>
-        <li>Level Design</li>
-        <li>Animation/Cutscenes</li>
-        </ul>
+        Cloud Runner was an experimental project, where I spent a lot of time focused on parts of game design I felt I didn't have lots of experience in. Most notably: level design, cutscenes, and shaders.
     </div>
-    <div class="paragraph">
-        Utilizes :
-        <ul>
-        <li>Unity 6</li>
-        <li>C#</li>
-        <li>Blender</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        Development Time :
-        <ul>
-        <li>2 Months</li>
-        </ul>
-    </div>
-    `, "#999999", true),
-    new ProjectData("project-1", "Life Before Death", "img/projects/lbd.png", 
+
+    `, "#999999", false, true),
+    new ProjectData("project-2", "Life Before Death", "img/projects/lifebanner.png", 
     `   
     <div class="paragraph">
      <strong>Life Before Death</strong> is a walking simulator/escape room game focused on interactive storytelling, diverse puzzles, and high quality graphics.
@@ -50,36 +50,29 @@ export default [
     <div class="paragraph center">
         <iframe src="https://store.steampowered.com/widget/3282650/" frameborder="0" width="646" height="190"></iframe>
     </div>
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="img/projects/lbd2.png" alt="LBD Screenshot" />
-        <img class="pc-screenshot" src="img/projects/lbd1.png" alt="LBD Screenshot" />
+    <div class="paragraph">
+        Life Before Death was my first attempt at a larger scale Unreal Engine project, focused on beautiful graphics and level design.
+    </div>
+    `, "#383838", false, true),
+    new ProjectData("project-3", "Brick Brick", "img/projects/brickbrick.png", 
+    `   
+    <div class="paragraph">
+     <strong>Brick Brick</strong> is a mobile puzzle game where you connect bricks to clear area and score points. It can be played in the browser below.
+    </div>
+    <div class="center">
+    <iframe src="https://bencatcraw.github.io/BrickBrick/" width="545" height="965">
+    </iframe>
     </div>
     <div class="paragraph">
-        My Contribution :
-        <ul>
-        <li>Programming</li>
-        <li>Level Design</li>
-        <li>Animation</li>
-        </ul>
+        Brick Brick was created in one night to test my development speed (and to make replicate a game my girlfriend plays that doesn't have ads.) Brick Brick is completely free and open source and is open to contributions!
     </div>
     <div class="paragraph">
-        Utilizes :
-        <ul>
-        <li>Unreal Engine 5</li>
-        <li>C++</li>
-        <li>Blueprints</li>
-        <li>Quixel</li>
-        </ul>
+        <div class="notice">
+        Source code available on <a href="https://github.com/bencatcraw/BrickBrick" target="_blank">GitHub</a>.
+        </div>
     </div>
-    
-    <div class="paragraph">
-        Development Time :
-        <ul>
-        <li>1 Month</li>
-        </ul>
-    </div>
-    `, "#383838", true),
-    new ProjectData("project-2", "Cookie & Cream VR Cafe", "img/projects/ccc.png", `
+    `, "#111922", true, false),
+    new ProjectData("project-4", "Cookie & Cream VR Cafe", "img/projects/ccc.png", `
     <div class="paragraph">
         <strong>Cookie & Cream</strong> is a coop VR cooking game where the players play as cats. While one player takes orders and fills drinks, the other frantically makes food while the timer counts down.
     </div>
@@ -91,26 +84,7 @@ export default [
     </div>
 
     <div class="paragraph">
-        My Contribution :
-        <ul>
-        <li>Programming</li>
-        <li>Animation</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        Utilizes :
-        <ul>
-        <li>Unity</li>
-        <li>C#</li>
-        <li>VR</li>
-        <li>Online Multiplayer</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        Development Time :
-        <ul>
-        <li>1 Month</li>
-        </ul>
+       Cookie & Cream was one of my first attempts at true online multiplayer using Unity's P2P solutions: Netcode for Gameobjects and Relay.
     </div>
 
     <div class="paragraph">
@@ -120,7 +94,7 @@ export default [
     </div>
     </div>
     `, "#5a78af"),
-    new ProjectData("project-3", "homebound", "img/projects/header.jpg", `
+    new ProjectData("project-5", "homebound", "img/projects/header.jpg", `
     <div class="paragraph">
         <strong>homebound</strong> is a astmospheric puzzle platformer about a lonely astronaut and fluffy new friend. homebound is available for free on Steam.
     </div>
@@ -135,103 +109,29 @@ export default [
     </div>
 
     <div class="paragraph">
-        My Contribution :
-        <ul>
-        <li>Programming</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        Utilizes :
-        <ul>
-        <li>Unity</li>
-        <li>C#</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        Development Time :
-        <ul>
-        <li>1 Year</li>
-        </ul>
-    </div>
-
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2568870/ss_5686460168acf81291a0a4951a6013f93c2bf29e.600x338.jpg?t=1695372893" alt="Drawing Overload Screenshot" />
-        <img class="pc-screenshot" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2568870/ss_1e4dff82a0e0bb20989c0a6791b62fc8b80ef717.600x338.jpg?t=1695372893" alt="Drawing Overload Screenshot" />
-        <img class="pc-screenshot" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2568870/ss_29a6848eb3f86abbaa06136231a7d110efc96879.600x338.jpg?t=1695372893" alt="Drawing Overload Screenshot" />
-        <img class="pc-screenshot" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2568870/ss_07b0686833618613b394bcb2c9f612f1cc6c4301.600x338.jpg?t=1695372893" alt="Drawing Overload Screenshot" />
+        homebound is a project I was invited onto by a friend. I helped provide insight on its current state, as well building out logic for the puzzle objects in the game.
     </div>
     `, "#e48246"),
-    new ProjectData("project-4", "Mars Mech Mission", "img/projects/mmmlogo.png", `
+    new ProjectData("project-6", "Mars Mech Mission", "img/projects/mmmlogo.png", `
     <div class="paragraph">
     <strong>Mars Mech Mission</strong> is a tower defense game about a lone dwarf who has to defend his space base from robotic crabs and scorpions.
     </div>
     <div class="paragraph center">
         <img width="800" src="img/projects/mmm.png" alt="Eugeneable Screenshot" />
     </div>
-
-    <div class="paragraph">
-        My Contribution :
-        <ul>
-        <li>Programming</li>
-        <li>3D Modeling</li>
-        <li>Level Design</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Unity</li>
-        <li>C#</li>
-        <li>Blender</li>
-        <li>FLStudio</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        Development Time :
-        <ul>
-        <li>1 Month</li>
-        </ul>
-    </div>
-
-    <div class="paragraph">
-        <div class="notice">
-        Playable in the browser on <a href="https://bencatcraw.itch.io/mmm/" target="_blank">itch.io</a>.
-        Source code available on <a href="https://github.com/bencatcraw/I3T4" target="_blank">GitHub</a>.
-        </div>
+    <div class="center">
+    <iframe frameborder="0" src="https://itch.io/embed/2039754" width="552" height="167"><a href="https://bencatcraw.itch.io/mmm">Mars Mech Mission by bencatcraw</a></iframe>
     </div>
     `, "#e48246"),
-    new ProjectData("project-5", "Untitled Mech Game", "img/projects/water_3.gif", `
+    new ProjectData("project-7", "Untitled Mech Game", "img/projects/water_3.gif", `
     <div class="paragraph">
         <strong>Untitled Mech Game</strong> was created for the MechJam III game jam by the UH Manoa Game Dev Club. The game is about a mech that can switch between earth, water, and fire abilities that let it solve puzzles to progress through the levels.
     </div>
     <div class="paragraph center">
         <img width="800" src="img/projects/art363.png" alt="Eugeneable Screenshot" />
     </div>
-
-    <div class="paragraph">
-        My Contribution :
-        <ul>
-        <li>Programming</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        Utilizes :
-        <ul>
-        <li>Unity</li>
-        <li>C#</li>
-        </ul>
-    </div>
-    <div class="paragraph">
-        Development Time :
-        <ul>
-        <li>2 Weeks</li>
-        </ul>
-    </div>
-
-    <div class="paragraph">
-        <div class="notice">
-        Playable in the browser on <a href="https://bencatcraw.itch.io/untitled-mech-game" target="_blank">itch.io</a>.
-        </div>
+    <div class="center">
+    <iframe frameborder="0" src="https://itch.io/embed/1631011" width="552" height="167"><a href="https://bencatcraw.itch.io/untitled-mech-game">Untitled Mech Game by bencatcraw</a></iframe>
     </div>
 `, "#5a78af")
 ];
