@@ -1,0 +1,150 @@
+{
+  "basics": {
+    "name": "Benjamin Crawford",
+    "label": "Game Developer, Student",
+    "image": "",
+    "email": "bcc@hawaii.edu",
+    "phone": "",
+    "url": "https://bencatcraw.github.io",
+    "summary": "A Computer Science master's student pursuing a career in game development.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Honolulu",
+      "countryCode": "US",
+      "region": "Hawaii"
+    },
+    "profiles": [
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Lab For Advanced Visualization Applications (LAVA)",
+      "position": "Research Assistant",
+      "url": "https://www.lavaflow.info/",
+      "startDate": "2024-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": ["Developing a web application for visualizing research papers to discover new avenues of research", "Developed a Unity application for projection on a 3D map to visualize GIS layers", "Worked with the Hawaii State Energy office to create a tool for community outreach"]
+    },
+    {
+      "name": "University of Hawaiʻi at Mānoa",
+      "position": "Network Support Specialist",
+      "url": "",
+      "startDate": "2022-01",
+      "endDate": "2024-01",
+      "summary": "",
+      "highlights": ["Repairing, and upgrading staff hardware and software", "Assess and troubleshoot computer problems brought by faculty and staff using WebHelpDesk", "Overseeing a system of 1000+ devices including computer setups, printers, servers, etc."]
+    }
+  ],
+  "internships": [
+    {
+      "name": "Vanta",
+      "position": "Event Operations Associate",
+      "url": "https://vantaesports.com/",
+      "startDate": "2023-6",
+      "endDate": "2023-8",
+      "summary": "Created playbooks for small to large eSports events for K-12 playerbase",
+      "highlights": ["eSports, Sponsorships"]
+    },
+    {
+      "name": "Blizzard Entertainment",
+      "position": "Overwatch League Student Intern",
+      "url": "https://esports.overwatch.com/en-us",
+      "startDate": "2022-5",
+      "endDate": "2022-6",
+      "summary": "Assisted in keeping the event (Midseason Madness) running smoothly and creation of short and long form content",
+      "highlights": ["eSports, Content Creation"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaiʻi at Mānoa",
+      "location": "Honolulu, Hawaii",
+      "url": "https://manoa.hawaii.edu/",
+      "area": "Computer Science",
+      "studyType": "Masters of Science",
+      "startDate": "2025",
+      "endDate": "2027",
+      "score": "10",
+      "courses": ["Project Track"]
+    },
+    {
+      "institution": "University of Hawaiʻi at Mānoa",
+      "location": "Honolulu, Hawaii",
+      "url": "https://manoa.hawaii.edu/",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Arts",
+      "startDate": "2021",
+      "endDate": "2025",
+      "score": "3.0",
+      "courses": ["Certificate in Creative Media"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Nobel Prize in Physics",
+      "date": "1921-11-01",
+      "awarder": "Royal Swedish Academy of Sciences",
+      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
+      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Game Development",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [ 
+        "Unity",
+        "Godot",
+        "Unreal",
+        "Netcode"
+      ]
+    },
+    {
+      "name": "3D Modeling",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [ 
+        "Blockbench",
+        "Blender",
+        "Maya"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Elementary level",
+      "icon": ""
+    },
+    {
+      "language": "Thai",
+      "fluency": "Learning",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Extracurricular",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Rock Climbing",
+        "Photography",
+        "FPV Drones",
+        "Trading Cards"
+      ]
+    }
+  ]
+}
