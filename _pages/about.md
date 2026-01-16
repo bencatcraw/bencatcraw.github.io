@@ -20,4 +20,4 @@ I'm Benjamin Crawford, a game developer with a passion for player-focused design
 
 I've worked on many **[projects](/projects/)** ranging from games to projected visualizations, and I've also took part in a few **[internships](/cv/)** as well. I'm always working on something new, so check the **[blog page](/blog/)** to see my most recent work!
 
-I'm currently looking for an internship as a <u>game designer</u> or <u>gameplay programmer</u>, where I can contribute my skills, creativity, and enthusiasm to new projects.
+I'm currently looking for a summer <u>game development</u> internship, where I can contribute my skills, creativity, and enthusiasm to new projects.
