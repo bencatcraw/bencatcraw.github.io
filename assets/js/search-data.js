@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-first-blog-post",
+        },{id: "post-2026-is-here",
+        
+          title: "2026 is here!",
+        
+        description: "plans for 2026",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/newyear/";
+          
+        },
+      },{id: "post-first-blog-post",
         
           title: "first blog post",
         
