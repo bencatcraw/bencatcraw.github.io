@@ -9,12 +9,33 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
-          title: "projects",
+  },{id: "nav-portfolio",
+          title: "portfolio",
           description: "A look at all the cool things I&#39;ve worked on.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/portfolio/";
+          },
+        },{id: "nav-games",
+          title: "games",
+          description: "Game projects from my portfolio.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/portfolio/games/";
+          },
+        },{id: "nav-prototypes",
+          title: "prototypes",
+          description: "Prototype projects from my portfolio.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/portfolio/prototypes/";
+          },
+        },{id: "nav-other",
+          title: "other",
+          description: "Other projects from my portfolio.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/portfolio/other/";
           },
         },{id: "nav-blog",
           title: "blog",
@@ -22,13 +43,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
           },
         },{id: "post-2026-is-here",
         
@@ -52,11 +66,46 @@ ninja.data = [{
             window.location.href = "/blog/2025/first/";
           
         },
-      },{id: "projects-brick-brick",
-          title: 'Brick Brick',
-          description: "mobile puzzle clearing",
+      },{id: "projects-untitled-mech-game",
+          title: 'Untitled Mech Game',
+          description: "mechjam 3 submission",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/brickbrick_project/";
+              window.location.href = "/projects/umg_project/";
+            },},{id: "projects-mars-mech-mission",
+          title: 'Mars Mech Mission',
+          description: "tower defense",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/mmm_project/";
+            },},{id: "projects-homebound",
+          title: 'homebound',
+          description: "puzzle platformer",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/homebound_project/";
+            },},{id: "projects-hawaii-healthcare-dashboard",
+          title: 'Hawaii Healthcare Dashboard',
+          description: "HACC 2023 submission",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/healthcare_project/";
+            },},{id: "projects-happening-mānoa",
+          title: 'Happening @ Mānoa',
+          description: "community events website",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ham_project/";
+            },},{id: "projects-createx-horror-experience",
+          title: 'CreateX Horror Experience',
+          description: "spooky projection mapping",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/createx_project/";
+            },},{id: "projects-haven-projectable",
+          title: 'HAVEN ProjecTable',
+          description: "clean energy visualizations",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/haven_project/";
+            },},{id: "projects-life-before-death",
+          title: 'Life Before Death',
+          description: "story walking sim",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/lbd_project/";
             },},{id: "projects-cookie-amp-cream-vr-cafe",
           title: 'Cookie &amp;amp; Cream VR Cafe',
           description: "multiplayer vr cooking game",
@@ -67,51 +116,16 @@ ninja.data = [{
           description: "arcade parkour",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cloudrunner_project/";
-            },},{id: "projects-createx-horror-experience",
-          title: 'CreateX Horror Experience',
-          description: "spooky projection mapping",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/createx_project/";
-            },},{id: "projects-happening-mānoa",
-          title: 'Happening @ Mānoa',
-          description: "community events website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/ham_project/";
-            },},{id: "projects-haven-projectable",
-          title: 'HAVEN ProjecTable',
-          description: "clean energy visualizations",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/haven_project/";
-            },},{id: "projects-hawaii-healthcare-dashboard",
-          title: 'Hawaii Healthcare Dashboard',
-          description: "HACC 2023 submission",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/healthcare_project/";
-            },},{id: "projects-homebound",
-          title: 'homebound',
-          description: "puzzle platformer",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/homebound_project/";
-            },},{id: "projects-life-before-death",
-          title: 'Life Before Death',
-          description: "story walking sim",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/lbd_project/";
-            },},{id: "projects-mars-mech-mission",
-          title: 'Mars Mech Mission',
-          description: "tower defense",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/mmm_project/";
-            },},{id: "projects-untitled-mech-game",
-          title: 'Untitled Mech Game',
-          description: "mechjam 3 submission",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/umg_project/";
             },},{id: "projects-wheelchair-wizards",
           title: 'Wheelchair Wizards',
           description: "multiplayer platform fighter",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ww_project/";
+            },},{id: "projects-brick-brick",
+          title: 'Brick Brick',
+          description: "mobile puzzle clearing",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/brickbrick_project/";
             },},{
         id: 'social-github',
         title: 'GitHub',
