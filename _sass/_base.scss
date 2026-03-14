@@ -280,6 +280,10 @@ ul.task-list input[type="checkbox"] {
     border-left: 1px solid var(--global-divider-color);
   }
 
+  .navbar-nav .nav-item:first-child {
+    border-left: 0;
+  }
+
   .navbar-toggler {
     margin-right: 0.25rem;
   }
