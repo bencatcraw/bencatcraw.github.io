@@ -3,7 +3,7 @@ layout: page
 title: Cookie & Cream VR Cafe
 description: multiplayer vr cooking game
 img: assets/img/ccc.png
-importance: 2
+date: 2024-12-01
 category: prototypes
 ---
 

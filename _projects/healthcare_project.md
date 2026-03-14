@@ -3,7 +3,7 @@ layout: page
 title: Hawaii Healthcare Dashboard
 description: HACC 2023 submission
 img: assets/img/tylerLogo.png
-importance: 4
+date: 2023-10-01
 category: other
 ---
 

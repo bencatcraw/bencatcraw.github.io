@@ -3,7 +3,7 @@ layout: page
 title: Untitled Mech Game
 description: mechjam 3 submission
 img: assets/img/water_3.gif
-importance: 5
+date: 2022-08-01
 category: prototypes
 ---
 

@@ -248,21 +248,41 @@ ul.task-list input[type="checkbox"] {
 .navbar {
   box-shadow: none;
   background-color: var(--global-bg-color);
-
-  position: fixed;
-  top: -2pt;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 1030;
-    
-  border-radius: 10pt;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-radius: 4px;
   border: 2pt solid var(--global-text-color);
-  border-top: 0;
+}
 
-  max-width: $max-content-width;
-  width: 100%;
+.site-top-nav {
+  margin-bottom: 0.9rem;
+
+  .site-top-nav-inner {
+    max-width: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .navbar-brand {
+    text-transform: uppercase;
+    letter-spacing: 0.18rem;
+    font-size: 0.7rem;
+  }
+
+  .navbar-nav .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 0.13rem;
+    font-size: 0.68rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .navbar-nav .nav-item {
+    border-left: 1px solid var(--global-divider-color);
+  }
+
+  .navbar-toggler {
+    margin-right: 0.25rem;
+  }
 }
 
 .navbar .dropdown-menu {
@@ -488,18 +508,24 @@ ul.task-list input[type="checkbox"] {
 
 // Footer
 footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  background-color: var(--global-bg-color);
+  font-size: 0.72rem;
+  position: static;
+  border-radius: 4px;
+  border: 2pt solid var(--global-text-color);
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
 
   .container {
-    color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
+    color: var(--global-text-color-light);
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
   }
 
   a {
-    color: var(--global-footer-link-color);
+    color: var(--global-text-color);
 
     &:hover {
       color: var(--global-theme-color);
@@ -509,13 +535,28 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  background-color: var(--global-bg-color);
+  border: 2pt solid var(--global-text-color);
+  border-radius: 4px;
+  margin-top: 1rem !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
 
   .container {
+    color: var(--global-text-color-light);
     text-align: center;
+  }
+
+  a {
+    color: var(--global-text-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
   }
 }
 
@@ -696,6 +737,14 @@ footer.sticky-bottom {
     padding-bottom: 1rem;
   } 
 
+  .project-date {
+    margin-bottom: 0.4rem;
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+  }
+
   .grid-sizer,
   .grid-item {
     width: 250px;
@@ -709,6 +758,19 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+  }
+}
+
+.about-project-feed {
+  .card {
+    figure {
+      margin: 0;
+    }
+
+    .card-img {
+      padding-top: 0;
+      display: block;
+    }
   }
 }
 
@@ -956,7 +1018,7 @@ progress {
   /* Positioning */
   position: fixed;
   left: 0;
-  top: 56px;
+  top: 0;
   z-index: 10;
 
   /* Dimensions */
@@ -994,7 +1056,7 @@ progress::-moz-progress-bar {
   width: 100%;
   background-color: transparent;
   position: fixed;
-  top: 56px;
+  top: 0;
   left: 0;
   height: 5px;
   display: block;

@@ -3,7 +3,7 @@ layout: page
 title: Brick Brick
 description: mobile puzzle clearing
 img: assets/img/bricksquare.png
-importance: 3
+date: 2025-10-01
 category: prototypes
 ---
 

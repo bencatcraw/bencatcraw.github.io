@@ -3,7 +3,7 @@ layout: page
 title: Wheelchair Wizards
 description: multiplayer platform fighter
 img: assets/img/WWSQUARE.png
-importance: 1
+date: 2025-08-01
 category: games
 ---
 

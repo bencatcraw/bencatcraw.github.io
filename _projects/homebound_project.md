@@ -3,7 +3,7 @@ layout: page
 title: homebound
 description: puzzle platformer
 img: assets/img/homebound.jpg
-importance: 3
+date: 2023-09-01
 category: games
 ---
 

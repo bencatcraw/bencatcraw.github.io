@@ -16,39 +16,75 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-    <!-- Header -->
-    {% include header.liquid %}
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %} {% if page.permalink == '/' %}home-page{% endif %}">
+    <div class="site-shell">
+      <!-- Header -->
+      {% include header.liquid %}
 
-    <!-- Content -->
-    <div class="container mt-5" role="main">
-      {% if page.toc and page.toc.sidebar %}
-        {% if page.toc.sidebar == 'right' %}
-          <div class="row">
-            <!-- main content area -->
-            <div class="col-sm-9">{{ content }}</div>
-            <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
+      {% if page.permalink == '/' %}
+        <main class="container site-main-inner site-main-combined" role="main">
+          <aside class="site-sidebar site-sidebar-inline">
+            <a class="site-sidebar-brand" href="{{ '/' | relative_url }}">
+              {% if site.title == 'blank' %}
+                {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+              {% else %}
+                {{ site.title }}
+              {% endif %}
+            </a>
+            <div class="site-sidebar-social">
+              <div class="contact-icons">{% include social.liquid %}</div>
             </div>
+          </aside>
+
+          <div class="site-content-column">
+            {% if page.toc and page.toc.sidebar %}
+              {% if page.toc.sidebar == 'right' %}
+                <div class="row">
+                  <div class="col-sm-9">{{ content }}</div>
+                  <div class="col-sm-3">
+                    <nav id="toc-sidebar" class="sticky-top"></nav>
+                  </div>
+                </div>
+              {% else %}
+                <div class="row">
+                  <div class="col-sm-3">
+                    <nav id="toc-sidebar" class="sticky-top"></nav>
+                  </div>
+                  <div class="col-sm-9">{{ content }}</div>
+                </div>
+              {% endif %}
+            {% else %}
+              {{ content }}
+            {% endif %}
           </div>
-        {% else %}
-          <div class="row">
-            <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
-            </div>
-            <!-- main content area -->
-            <div class="col-sm-9">{{ content }}</div>
-          </div>
-        {% endif %}
+        </main>
       {% else %}
-        {{ content }}
+        <main class="container site-main-inner" role="main">
+          {% if page.toc and page.toc.sidebar %}
+            {% if page.toc.sidebar == 'right' %}
+              <div class="row">
+                <div class="col-sm-9">{{ content }}</div>
+                <div class="col-sm-3">
+                  <nav id="toc-sidebar" class="sticky-top"></nav>
+                </div>
+              </div>
+            {% else %}
+              <div class="row">
+                <div class="col-sm-3">
+                  <nav id="toc-sidebar" class="sticky-top"></nav>
+                </div>
+                <div class="col-sm-9">{{ content }}</div>
+              </div>
+            {% endif %}
+          {% else %}
+            {{ content }}
+          {% endif %}
+        </main>
       {% endif %}
-    </div>
 
-    <!-- Footer -->
-    {% include footer.liquid %}
+      <!-- Footer -->
+      {% include footer.liquid %}
+    </div>
 
     <!-- JavaScripts -->
     {% include scripts.liquid %}

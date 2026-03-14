@@ -3,7 +3,7 @@ layout: page
 title: Life Before Death
 description: story walking sim
 img: assets/img/lifesquare.png
-importance: 2
+date: 2024-10-01
 category: games
 ---
 

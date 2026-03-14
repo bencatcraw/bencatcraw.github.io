@@ -3,7 +3,7 @@ layout: page
 title: Happening @ Mānoa
 description: community events website
 img: assets/img/ham.png
-importance: 2
+date: 2024-03-01
 category: other
 ---
 
