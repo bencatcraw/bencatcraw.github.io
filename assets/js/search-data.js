@@ -18,21 +18,21 @@ ninja.data = [{
           },
         },{id: "nav-games",
           title: "games",
-          description: "Game projects from my portfolio.",
+          description: "Released games I made or worked on",
           section: "Navigation",
           handler: () => {
             window.location.href = "/portfolio/games/";
           },
         },{id: "nav-prototypes",
           title: "prototypes",
-          description: "Prototype projects from my portfolio.",
+          description: "Proof of concept projects",
           section: "Navigation",
           handler: () => {
             window.location.href = "/portfolio/prototypes/";
           },
         },{id: "nav-other",
           title: "other",
-          description: "Other projects from my portfolio.",
+          description: "other cool stuff I&#39;ve worked on",
           section: "Navigation",
           handler: () => {
             window.location.href = "/portfolio/other/";
@@ -126,6 +126,16 @@ ninja.data = [{
           description: "mobile puzzle clearing",
           section: "Projects",handler: () => {
               window.location.href = "/projects/brickbrick_project/";
+            },},{id: "projects-interactive-3d-aquarium",
+          title: 'Interactive 3D Aquarium',
+          description: "create your own fish",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/aquarium_project/";
+            },},{id: "projects-arcane-interns",
+          title: 'Arcane Interns',
+          description: "co-op roguelike dungeon crawler",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/arcane_project/";
             },},{
         id: 'social-github',
         title: 'GitHub',
@@ -134,25 +144,11 @@ ninja.data = [{
           window.open("https://github.com/bencatcraw", "_blank");
         },
       },{
-        id: 'social-discord',
-        title: 'Discord',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://discord.com/users/218866368940867585", "_blank");
-        },
-      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/bencatcraw", "_blank");
-        },
-      },{
-        id: 'social-instagram',
-        title: 'Instagram',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://instagram.com/bencatcraw", "_blank");
         },
       },{
         id: 'social-email',
