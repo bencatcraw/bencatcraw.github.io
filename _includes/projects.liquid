@@ -1,38 +1,24 @@
 <div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      {% if project.img %}
+  <a class="project-tile" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+    {% if project.img %}
+      <div class="project-tile-image">
         {%
           include figure.liquid
-          loading="eager"
+          loading="lazy"
           path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
-          class="card-img-top"
+          sizes="(min-width: 992px) 420px, (min-width: 576px) 50vw, 95vw"
+          alt=project.title
         %}
-      {% endif %}
-      <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
-        {% if project.date %}
-          <p class="project-date">{{ project.date | date: "%B %Y" }}</p>
-        {% endif %}
-        <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fa-solid fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-              {% endif %}
-            </div>
-          {% endif %}
-        </div>
       </div>
+    {% endif %}
+    <div class="project-tile-caption">
+      <h2 class="project-tile-title">{{ project.title }}</h2>
+      {% if project.date or project.description %}
+        <p class="project-tile-meta">
+          {%- if project.date %}<span class="project-tile-date">{% include project_date.liquid project=project format='%b %Y' %}</span>{% endif -%}
+          {%- if project.description %}<span class="project-tile-description">{{ project.description }}</span>{% endif -%}
+        </p>
+      {% endif %}
     </div>
   </a>
 </div>

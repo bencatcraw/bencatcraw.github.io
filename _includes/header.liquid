@@ -2,7 +2,7 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar site-top-nav navbar-light navbar-expand-sm" role="navigation">
     <div class="container site-top-nav-inner">
-      <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+      <a class="navbar-brand title" href="{{ site.baseurl }}/">
         {% if site.title == 'blank' %}
           {% if site.first_name %}
             {{- site.first_name -}}
@@ -34,10 +34,18 @@
       </button>
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+        <ul class="navbar-nav mr-auto flex-nowrap">
           <!-- Other pages -->
           {% assign nav_pages = site.pages | where: 'nav', true %}
           {% assign sorted_pages = nav_pages | where_exp: 'p', 'p.autogen == null' | sort: 'nav_order' %}
+          <!-- Highlight only the most specific match, so /portfolio/games/ lights up "games" and not "portfolio" too -->
+          {% assign active_link = '' %}
+          {% for p in sorted_pages %}
+            {% assign candidate = p.permalink | remove: 'index.html' %}
+            {% if page.url contains candidate and candidate.size > active_link.size %}
+              {% assign active_link = candidate %}
+            {% endif %}
+          {% endfor %}
           {% for p in sorted_pages %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
@@ -78,7 +86,7 @@
                 </li>
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
-                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
+                <li class="nav-item {% if parent_link == active_link %}active{% endif %}">
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
                   {%- elsif p.permalink contains '/blog/' -%}
@@ -88,7 +96,7 @@
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
                     {{- p.title }}
-                    {% if page.url contains p.url %}
+                    {% if parent_link == active_link %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
                   </a>

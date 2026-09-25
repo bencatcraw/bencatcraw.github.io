@@ -16,45 +16,26 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
-<div class="post">
-
 {% assign blog_name_size = site.blog_name | size %}
 {% assign blog_description_size = site.blog_description | size %}
 
-{% if blog_name_size > 0 or blog_description_size > 0 %}
-
-  <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
-  </div>
+<div class="page-intro">
+  <h1 class="page-intro-title">{% if blog_name_size > 0 %}{{ site.blog_name }}{% else %}{{ page.title }}{% endif %}</h1>
+  {% if blog_description_size > 0 %}
+    <p class="page-intro-description">{{ site.blog_description }}</p>
   {% endif %}
+</div>
 
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
-
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      {% for tag in site.display_tags %}
-        <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
-      {% for category in site.display_categories %}
-        <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
+<ul class="tag-strip">
+  {% for tag in site.display_tags %}
+    <li><a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"><i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a></li>
+  {% endfor %}
+  {% for category in site.display_categories %}
+    <li><a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"><i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
@@ -97,100 +78,63 @@ pagination:
       {% endfor %}
       </div>
     </div>
-    <hr>
 
 {% endif %}
-
-  <ul class="post-list">
-
-    {% if page.pagination.enabled %}
-      {% assign postlist = paginator.posts %}
-    {% else %}
-      {% assign postlist = site.posts %}
-    {% endif %}
-
-    {% for post in postlist %}
-
-    {% if post.external_source == blank %}
-      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-    {% else %}
-      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
-    {% endif %}
-    {% assign year = post.date | date: "%Y" %}
-    {% assign tags = post.tags | join: "" %}
-    {% assign categories = post.categories | join: "" %}
-
-    <li>
-
-{% if post.thumbnail %}
-
-<div class="row">
-          <div class="col-sm-9">
-{% endif %}
-        <h3>
-        {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% elsif post.redirect contains '://' %}
-          <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
-          <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        {% else %}
-          <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-      </h3>
-      <p>{{ post.description }}</p>
-      <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
-        {% if post.external_source %}
-        &nbsp; &middot; &nbsp; {{ post.external_source }}
-        {% endif %}
-      </p>
-      <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-
-          {% if tags != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-
-          {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-    </p>
-
-{% if post.thumbnail %}
-
-</div>
-
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
-  </div>
-</div>
-{% endif %}
-    </li>
-
-    {% endfor %}
-
-  </ul>
 
 {% if page.pagination.enabled %}
-{% include pagination.liquid %}
+  {% assign postlist = paginator.posts %}
+{% else %}
+  {% assign postlist = site.posts %}
 {% endif %}
 
+<div class="post-feed">
+{% for post in postlist %}
+  {% if post.external_source == blank %}
+    {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+  {% else %}
+    {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+  {% endif %}
+  {% if post.redirect == blank %}
+    {% assign post_url = post.url | relative_url %}
+  {% elsif post.redirect contains '://' %}
+    {% assign post_url = post.redirect %}
+  {% else %}
+    {% assign post_url = post.redirect | relative_url %}
+  {% endif %}
+
+  <article class="feed-post">
+    <header class="feed-post-header">
+      <div class="feed-post-title">
+        <h2><a href="{{ post_url }}">{{ post.title }}</a></h2>
+        <time class="feed-post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %d, %Y' }}</time>
+      </div>
+    </header>
+
+    <div class="feed-post-body{% unless post.thumbnail %} feed-post-body-text-only{% endunless %}">
+      {% if post.thumbnail %}
+        <a class="feed-post-image" href="{{ post_url }}">
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
+        </a>
+      {% endif %}
+
+      <div class="feed-post-text">
+        {% if post.description %}
+          <p class="feed-post-description">{{ post.description }}</p>
+        {% endif %}
+
+        <footer class="feed-post-footer">
+          <span class="feed-post-category">{{ read_time }} min read</span>
+          {% for tag in post.tags %}
+            <a class="feed-post-category" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">#{{ tag }}</a>
+          {% endfor %}
+          <a class="btn-outline-hairline" href="{{ post_url }}">Read More</a>
+        </footer>
+      </div>
+    </div>
+  </article>
+{% endfor %}
 </div>
+
+{% if page.pagination.enabled %}
+  {% include pagination.liquid %}
+{% endif %}

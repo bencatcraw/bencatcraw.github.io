@@ -6,14 +6,14 @@ body {
   overflow-y: scroll;
   padding-bottom: 0;
   color: var(--global-text-color);
-  background-image: url(../img/bg.jpg);
+  background-color: var(--global-bg-color);
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 5rem;
   }
 }
 
@@ -37,85 +37,76 @@ body.sticky-bottom-footer {
   }
 }
 
+// Everything below the full-width header spans the window, like the header
 .site-shell {
-  width: min(#{$max-content-width}, calc(100% - 2rem));
-  margin: 1rem auto;
+  width: min(#{$max-content-width}, calc(100% - 6rem));
+  margin: 3rem auto 0;
+}
+
+// Home page: sidebar on the left, project feed on the right
+.site-main-combined {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 3.5rem;
+  max-width: none;
+  padding: 0;
 }
 
 .site-sidebar {
-  padding: 1.75rem 1.5rem 1.75rem 0;
   display: flex;
   flex-direction: column;
 }
 
 .site-sidebar-inline {
-  position: relative;
-  top: auto;
+  position: sticky;
+  top: 6.5rem;
   align-self: start;
-  height: auto;
-  min-height: 100%;
-  overflow: visible;
-  border-right: 1px solid var(--global-divider-color);
-  margin-right: 0.75rem;
 }
 
 .site-sidebar-brand {
-  color: var(--global-text-color);
-  text-decoration: none;
   display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 0.28rem;
-  font-size: 1.2rem;
+  color: var(--global-heading-color);
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.5;
+  letter-spacing: $title-letter-spacing;
+  text-transform: uppercase;
+  text-decoration: none;
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: none;
   }
 }
 
 .site-sidebar-subtitle {
-  margin-top: 1rem;
-  margin-bottom: 0;
-  color: var(--global-text-color-light);
-  text-transform: uppercase;
-  letter-spacing: 0.12rem;
+  margin: 1.25rem 0 0;
+  color: var(--global-theme-color);
   font-size: 0.8rem;
-}
-
-.site-sidebar-spacer {
-  flex: 1;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
 }
 
 .site-sidebar-social {
-  width: fit-content;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
 
   a {
     color: var(--global-text-color);
     text-decoration: none;
 
     &:hover {
-      color: var(--global-theme-color);
+      color: var(--global-hover-color);
     }
   }
 
   .contact-icons {
-    font-size: 1.45rem;
+    font-size: 1.2rem;
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     flex-wrap: wrap;
   }
-}
-
-.site-sidebar-copy {
-  margin: 0;
-  padding-top: 1rem;
-  font-size: 0.7rem;
-  letter-spacing: 0.08rem;
-  text-transform: uppercase;
-  color: var(--global-text-color-light);
 }
 
 .site-content-column {
@@ -123,47 +114,60 @@ body.sticky-bottom-footer {
 }
 
 .site-main-inner {
-  background-color: var(--global-bg-color);
-  padding: 20pt;
-  border-radius: 4px;
-  border: 2pt solid var(--global-text-color);
+  max-width: none;
+  padding: 0;
   margin-top: 0 !important;
 }
 
-.site-main-combined {
-  display: grid;
-  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
-  gap: 1rem;
+// Project pages, blog posts and archives sit in one outlined card
+.site-main-inner .post {
+  background-color: var(--global-panel-bg-color);
+  border: 1px solid var(--global-divider-color);
+  padding: 2.5rem 3rem;
 }
-
-// TODO: redefine content layout.
 
 @media (max-width: 992px) {
   .site-shell {
-    width: calc(100% - 1rem);
-    margin: 0.5rem auto;
+    width: calc(100% - 2rem);
+    margin-top: 2rem;
   }
 
   .site-main-combined {
-    grid-template-columns: 1fr;
-    gap: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
   }
 
   .site-sidebar-inline {
-    position: relative;
-    top: auto;
-    height: auto;
-    min-height: auto;
-    padding: 0 0 1rem;
-    margin-right: 0;
-    margin-bottom: 1rem;
-    border-right: 0;
-    border-bottom: 1px solid var(--global-divider-color);
+    position: static;
+    align-items: center;
+    text-align: center;
   }
 
   .site-sidebar-brand {
-    letter-spacing: 0.2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .site-sidebar-social {
+    width: 100%;
+    padding-bottom: 2rem;
+
+    .contact-icons {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-main-inner .post {
+    padding: 1.5rem;
+  }
+
+  .site-main-inner .post-header {
+    margin: -1.5rem -1.5rem 1.5rem;
+  }
+
+  .site-main-inner .post-header:not(.post-header-split) {
+    padding: 1.75rem 1.5rem 1.25rem;
   }
 }
 

@@ -1,0 +1,12 @@
+{%- comment -%}
+  Prints a project's date, or a range when `date_end` is set in its front matter.
+  `date_end: present` shows "Present"; any other value is formatted as a date.
+  Usage: {% include project_date.liquid project=page format='%B %Y' %}
+{%- endcomment -%}
+{%- assign date_format = include.format | default: '%B %Y' -%}
+{{- include.project.date | date: date_format -}}
+{%- if include.project.date_end -%}
+  {%- assign date_end = include.project.date_end | downcase -%}
+  {{- ' - ' -}}
+  {%- if date_end == 'present' -%}Present{%- else -%}{{- include.project.date_end | date: date_format -}}{%- endif -%}
+{%- endif -%}

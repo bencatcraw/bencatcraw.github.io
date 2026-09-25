@@ -41,6 +41,26 @@ $cream-color: #EFE9E3;
 $cream-color-dark: #c5a278 ;
 $dark-brown-color:#241400;
 
+// Dark "Future Imperfect" palette
+$charcoal-color: #1e2122;
+$charcoal-color-dark: #181a1b;
+$charcoal-border-color: #282a2c;
+$ash-text-color: #a8a196;
+$ash-heading-color: #c9c4bb;
+$ash-muted-color: #7d776e;
+$hairline-color: rgba(160, 160, 160, 0.3);
+
+// Accent used for dates, the active nav link, hovers and the sidebar subtitle
+$accent-color: #9d8df1;
+
+// Fonts (for the Future Imperfect look, use "Raleway" for headings and
+// "Source Sans Pro" for body, and add them to google_fonts in _config.yml)
+$heading-font: "Roboto", Helvetica, sans-serif;
+$body-font: "Roboto", Helvetica, sans-serif;
+
+// Letter spacing for titles (headings, site name). Small labels use wider tracking.
+$title-letter-spacing: 0.1em;
+
 // Font awesome location
 $fa-font-path: "../webfonts";
 

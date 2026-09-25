@@ -11,7 +11,5 @@ category: other
     {% include figure.liquid loading="eager" path="assets/img/hhd.png" title="" class="post-img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
-**Hawaii Healthcare Dashboard** A dashboard that allows users that understand different languages to search for healthcare facilities and filter them by name, services, insurance, island, and facility type. Created for Hawaii Annual Code Challenge 2023.
-
-The source code is available **[here](https://github.com/bencatcraw/HACC2023)**.
+**Hawaii Healthcare Dashboard** is a dashboard that allows users that understand different languages to search for healthcare facilities and filter them by name, services, insurance, island, and facility type. It was created for the Hawaii Annual Code Challenge 2023 and built as a team using Meteor and React, where I worked on the front end, building the React UI and the search and filtering for facilities. The source code is available **[here](https://github.com/bencatcraw/HACC2023)**.
 

@@ -11,8 +11,15 @@
   {% endif %}
 {% endcapture %}
 
+{% capture footer_social %}
+  {% unless page.permalink == '/' %}
+    <div class="footer-social contact-icons">{% include social.liquid %}</div>
+  {% endunless %}
+{% endcapture %}
+
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
+    {{ footer_social }}
     <div class="container mt-0">
       {{ footer_contents }}
     </div>
@@ -23,6 +30,7 @@
       {% include newsletter.liquid %}
     {% endif %}
 
+    {{ footer_social }}
     <div class="container">
       {{ footer_contents }}
     </div>

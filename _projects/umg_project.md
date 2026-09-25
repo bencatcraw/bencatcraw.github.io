@@ -11,7 +11,7 @@ category: prototypes
     {% include figure.liquid loading="eager" path="assets/img/art363.png" title="" class="post-img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
-**Untitled Mech Game** was created for the MechJam III game jam by the UH Manoa Game Dev Club. The game is about a mech that can switch between earth, water, and fire abilities that let it solve puzzles to progress through the levels.
+**Untitled Mech Game** was created for the MechJam III game jam by the UH Manoa Game Dev Club. The game is about a mech that can switch between earth, water, and fire abilities that let it solve puzzles to progress through the levels. I was a programmer on the team, working on the mech controller, the element abilities, and the puzzles they interact with.
 
 <br>
 

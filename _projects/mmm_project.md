@@ -11,7 +11,7 @@ category: prototypes
     {% include figure.liquid loading="eager" path="assets/img/mmm.png" title="" class="post-img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 
-**Mars Mech Mission** is a tower defense game about a lone dwarf who has to defend his space base from robotic crabs and scorpions.
+**Mars Mech Mission** is a tower defense game about a lone dwarf who has to defend his space base from robotic crabs and scorpions. It was made in Unity, where I focused on the tower and enemy systems, including the enemy pathing that brings the crabs and scorpions to the base.
 
 <br>
 

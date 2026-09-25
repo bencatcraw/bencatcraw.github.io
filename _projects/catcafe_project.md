@@ -13,6 +13,4 @@ category: prototypes
 
 <br>
 
-**Cookie & Cream** is a coop VR cooking game where the players play as cats. While one player takes orders and fills drinks, the other frantically makes food while the timer counts down.
-
-Cookie & Cream was one of my first attempts at true online multiplayer using Unity's P2P solutions: Netcode for Gameobjects and Relay. The source code is available **[here](https://github.com/bencatcraw/VRCATCAFE)**.
+**Cookie & Cream** is a coop VR cooking game where the players play as cats. While one player takes orders and fills drinks, the other frantically makes food while the timer counts down. It was made for the Meta Quest as part of a team, where I was the lead programmer. I worked on the multiplayer, the cooking and order systems, and the VR interactions. Cookie & Cream was one of my first attempts at true online multiplayer using Unity's P2P solutions: Netcode for Gameobjects and Relay. The source code is available **[here](https://github.com/bencatcraw/VRCATCAFE)**.

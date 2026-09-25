@@ -1,0 +1,40 @@
+{% if project.redirect %}
+  {% assign project_url = project.redirect %}
+{% else %}
+  {% assign project_url = project.url | relative_url %}
+{% endif %}
+
+<article class="feed-post">
+  <header class="feed-post-header">
+    <div class="feed-post-title">
+      <h2><a href="{{ project_url }}">{{ project.title }}</a></h2>
+      {% if project.date %}
+        <time class="feed-post-date" datetime="{{ project.date | date_to_xmlschema }}">{% include project_date.liquid project=project %}</time>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="feed-post-body{% unless project.img %} feed-post-body-text-only{% endunless %}">
+    {% if project.img %}
+      <a class="feed-post-image" href="{{ project_url }}">
+        {%
+          include figure.liquid
+          loading="lazy"
+          path=project.img
+          sizes="(min-width: 768px) 360px, 90vw"
+          alt=project.title
+        %}
+      </a>
+    {% endif %}
+
+    <div class="feed-post-text">
+      {% if project.description %}
+        <p class="feed-post-description">{{ project.description }}</p>
+      {% endif %}
+
+      <footer class="feed-post-footer">
+        <a class="btn-outline-hairline" href="{{ project_url }}">View More</a>
+      </footer>
+    </div>
+  </div>
+</article>

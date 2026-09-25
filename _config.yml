@@ -6,6 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Ben
 middle_name: 
 last_name: Crawford
+subtitle: Game Developer # shown under your name in the home page sidebar
 contact_note: >
   Feel free to reach out to me through any of these.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -52,7 +53,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 800px
+max_width: 1400px
 
 # TODO: add layout settings (single page vs. multi-page)
 

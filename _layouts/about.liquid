@@ -1,18 +1,14 @@
 ---
 layout: default
 ---
-<div class="post about-clean">
-  <article>
-    <!-- Projects in a single ordered list -->
-    {% assign ordered_projects = site.projects | sort: "date" | reverse %}
-    {% if ordered_projects and ordered_projects.size > 0 %}
-      <div class="projects about-project-feed">
-        <div class="row row-cols-1">
-          {% for project in ordered_projects %}
-            {% include projects_horizontal.liquid %}
-          {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-  </article>
+<div class="about-clean">
+  <!-- Projects in a single ordered feed -->
+  {% assign ordered_projects = site.projects | sort: "date" | reverse %}
+  {% if ordered_projects and ordered_projects.size > 0 %}
+    <div class="about-project-feed">
+      {% for project in ordered_projects %}
+        {% include project_feed_post.liquid %}
+      {% endfor %}
+    </div>
+  {% endif %}
 </div>

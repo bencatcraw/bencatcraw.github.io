@@ -5,30 +5,28 @@
 @use "sass:color";
 
 :root {
-  color-scheme: light;
-  --global-bg-color: #{$cream-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$dark-brown-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cream-color-dark};
-  --global-hover-color: #{$cream-color-dark};
+  color-scheme: dark;
+  --global-bg-color: #{$charcoal-color};
+  --global-panel-bg-color: #{$charcoal-color-dark};
+  --global-panel-border-color: #{$charcoal-border-color};
+  --global-code-bg-color: #{$code-bg-color-dark};
+  --global-text-color: #{$ash-text-color};
+  --global-heading-color: #{$ash-heading-color};
+  --global-text-color-light: #{$ash-muted-color};
+  --global-theme-color: #{$accent-color};
+  --global-hover-color: #{$white-color};
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color};
-  --global-footer-text-color: #{$cream-color};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$cream-color};
+  --global-footer-bg-color: #{$charcoal-color-dark};
+  --global-footer-text-color: #{$ash-muted-color};
+  --global-footer-link-color: #{$ash-text-color};
+  --global-distill-app-color: #{$ash-muted-color};
+  --global-divider-color: #{$hairline-color};
+  --global-card-bg-color: #{$charcoal-color-dark};
   --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
+  --global-back-to-top-bg-color: #{$charcoal-color-dark};
+  --global-back-to-top-text-color: #{$ash-text-color};
+  --global-newsletter-bg-color: #{$charcoal-color-dark};
+  --global-newsletter-text-color: #{$ash-text-color};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

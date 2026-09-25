@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<!-- Full-width tile grid with a slim title strip, no outer panel -->
+<div class="page-intro">
+  <h1 class="page-intro-title">{{ page.title }}</h1>
+  {% if page.description %}
+    <p class="page-intro-description">{{ page.description }}</p>
+  {% endif %}
+</div>
+
+{{ content }}

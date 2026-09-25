@@ -13,6 +13,4 @@ category: prototypes
 
 <br>
 
-**Cloud Runner** is a fast paced interactive parkour game that has the player running on clouds while slicing buildings and parrying meteors to fight back against an evil megacorporation.
-
-Cloud Runner was an experimental project, where I spent a lot of time focused on parts of game design I felt I didn't have lots of experience in. Most notably: level design, cutscenes, and shaders.
+**Cloud Runner** is a fast paced interactive parkour game that has the player running on clouds while slicing buildings and parrying meteors to fight back against an evil megacorporation. It was made in Unity as part of a team, where I was the lead programmer. I worked on the parkour movement and the combat for slicing buildings and parrying meteors. Cloud Runner was also an experimental project for me, where I spent a lot of time on parts of game design I felt I didn't have lots of experience in. Most notably: level design, cutscenes, and shaders.

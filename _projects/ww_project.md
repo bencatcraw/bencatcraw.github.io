@@ -13,9 +13,7 @@ category: games
 
 <br>
 
-**Wheelchair Wizards** is is a 4 player party game where you battle your friends while upgrading your wizard. Wheelchair Wizards is available on Steam for free, and has seen over 70,000 unique players in 6 months and has 1000+ daily active users.
-
-Wheelchair Wizards was created in Godot, to challenge my cross-engine knowledge. It uses a recompiled version of the engine to incoporate GodotSteam, a networking library for leveraging Steam's built-in P2P.
+**Wheelchair Wizards** is an 8 player party game where you battle your friends while upgrading your wizard. Wheelchair Wizards is available on Steam for free, and has seen over 100,000 unique players and continues to have 1000+ daily active users. It was created in Godot, to challenge my cross-engine knowledge, and uses a recompiled version of the engine to incorporate GodotSteam, a networking library for leveraging Steam's built-in P2P. I co-developed it with a friend, who made the music and some of the level design.
 
 <br>
 
