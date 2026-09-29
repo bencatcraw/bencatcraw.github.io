@@ -18,6 +18,6 @@ category: games
 <br>
 
 <div class="center">
-    <iframe src="https://store.steampowered.com/widget/3282650/" frameborder="0" width="100%" height="190px">
+    <iframe class="steam-widget" src="https://store.steampowered.com/widget/3282650/" frameborder="0" width="100%" height="190px">
     </iframe>
 </div>

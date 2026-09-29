@@ -16,5 +16,5 @@ category: prototypes
 <br>
 
 <div class="text-center">
-    <iframe frameborder="0" src="https://itch.io/embed/2039754" width="100%" height="167"><a href="https://bencatcraw.itch.io/mmm">Mars Mech Mission by bencatcraw</a></iframe>
+    <iframe class="itch-widget" frameborder="0" src="https://itch.io/embed/2039754" width="100%" height="167"><a href="https://bencatcraw.itch.io/mmm">Mars Mech Mission by bencatcraw</a></iframe>
 </div>

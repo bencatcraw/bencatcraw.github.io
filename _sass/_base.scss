@@ -247,8 +247,8 @@ ul.task-list input[type="checkbox"] {
 // Third-party store widgets on project pages.
 // color-scheme: light stops the browser painting a white backdrop behind these
 // light-scheme embeds on our dark page, so their transparent areas stay transparent.
-iframe[src*="store.steampowered.com/widget"],
-iframe[src*="itch.io/embed"],
+iframe.steam-widget,
+iframe.itch-widget,
 iframe.game-embed {
   color-scheme: light;
   background-color: transparent;
@@ -263,12 +263,12 @@ iframe.game-embed {
 }
 
 // The Steam widget is fluid, so let it span the full card width
-iframe[src*="store.steampowered.com/widget"] {
+iframe.steam-widget {
   display: block;
   width: 100%;
 }
 
-iframe[src*="itch.io/embed"] {
+iframe.itch-widget {
   display: block;
   width: 100%;
   max-width: 552px;

@@ -16,5 +16,5 @@ category: prototypes
 <br>
 
 <div class="text-center">
-    <iframe frameborder="0" src="https://itch.io/embed/1631011" width="100%" height="167"><a href="https://bencatcraw.itch.io/untitled-mech-game">Untitled Mech Game by bencatcraw</a></iframe>
+    <iframe class="itch-widget" frameborder="0" src="https://itch.io/embed/1631011" width="100%" height="167"><a href="https://bencatcraw.itch.io/untitled-mech-game">Untitled Mech Game by bencatcraw</a></iframe>
 </div>
